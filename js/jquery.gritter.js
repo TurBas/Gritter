@@ -110,6 +110,7 @@
 				image = params.image || '',
 				icon = params.icon || '',
 				sticky = params.sticky || false,
+				disable_close = params.disable_close || false,
 				item_class = params.class_name || $.gritter.options.class_name,
 				position = $.gritter.options.position,
 				time_alive = params.time || '';
@@ -154,7 +155,7 @@
 			
 			tmp = this._str_replace(
 				['[[title]]', '[[text]]', '[[close]]', '[[image]]', '[[number]]', '[[class_name]]', '[[item_class]]'],
-				[title, text, this._tpl_close, image_str, this._item_count, class_name, item_class], tmp
+				[title, text, disable_close ? '' : this._tpl_close, image_str, this._item_count, class_name, item_class], tmp
 			);
 
 			// If it's false, don't show another gritter message
