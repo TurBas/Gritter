@@ -108,7 +108,7 @@
 			var title = params.title, 
 				text = params.text,
 				image = params.image || '',
-				icon = params.icon || false,
+				icon = params.icon || '',
 				sticky = params.sticky || false,
 				item_class = params.class_name || $.gritter.options.class_name,
 				position = $.gritter.options.position,
@@ -137,8 +137,8 @@
 
 			if( image != '' ){
 				image_str = '<div class="gritter-img-container"><img src="' + image + '" class="gritter-image" /></div>';
-			} else if ( icon ) {
-				image_str = '<div class="gritter-icon-container"><span class="gritter-icon"></span></div>';
+			} else if ( icon != '' ) {
+				image_str = '<div class="gritter-icon-container"><div class="icon"><span class="gritter-icon' + icon +'"></span></div></div>';
 			} else {
 				image_str = '';
 			}
