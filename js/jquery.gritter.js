@@ -138,7 +138,7 @@
 			if( image != '' ){
 				image_str = '<div class="gritter-img-container"><img src="' + image + '" class="gritter-image" /></div>';
 			} else if ( icon != '' ) {
-				image_str = '<div class="gritter-icon-container"><div class="icon"><span class="gritter-icon' + icon +'"></span></div></div>';
+				image_str = '<div class="gritter-icon-container"><div class="icon"><span class="gritter-icon ' + icon +'"></span></div></div>';
 			} else {
 				image_str = '';
 			}
