@@ -17,6 +17,7 @@
       "exports": "Gritter"
     }
   },
+  "main": "js/jquery.gritter.js",
   "maintainers": [
     {
       "name": "Jordan Boesch",      
